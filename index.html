@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotbar</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+      * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.hotbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #1606eb;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.hotbar-item {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    text-align: right;
+}
+
+.hotbar-item:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+    .hotbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hotbar-item {
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="hotbar">
+        <a href="#home" class="hotbar-item">Início</a>
+        <a href="#sobre" class="hotbar-item">Sobre</a>
+        <a href="#servicos" class="hotbar-item">Serviços</a>
+        <a href="#contato" class="hotbar-item">Contato</a>
+    </div>
+
+</body>
+</html>
